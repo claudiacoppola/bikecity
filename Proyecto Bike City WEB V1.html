@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bike City - Turismo Sostenible en Montevideo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'bike-green': '#22c55e',
+                        'sand-light': '#f5e6d3',
+                        'sand-medium': '#e6d2b5',
+                        'brown-medium': '#8b4513',
+                        'brown-dark': '#654321',
+                        'heritage-gold': '#d4af37'
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-white text-gray-800">
+      
+    <header class="bg-brown-dark text-white shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-3">
+                    <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Imagen2-VXMyF0w9F5UcxN4bHcc8ibEB6M9ZRa.png" alt="Bike City Logo" class="w-12 h-12 rounded-full">
+                    <h1 class="text-2xl font-bold">Bike City</h1>
+                </div>
+                <nav class="hidden md:flex space-x-6">
+                    <a href="#inicio" class="hover:text-heritage-gold transition-colors">Inicio</a>
+                    <a href="#servicios" class="hover:text-heritage-gold transition-colors">Servicios</a>
+                    <a href="#beneficios" class="hover:text-heritage-gold transition-colors">Beneficios</a>
+                    <a href="#recorrido" class="hover:text-heritage-gold transition-colors">Recorrido</a>
+                    <a href="#contacto" class="hover:text-heritage-gold transition-colors">Contacto</a>
+                </nav>
+                <button class="md:hidden text-white">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+      
+    <section id="inicio" class="relative bg-gradient-to-br from-sand-light to-sand-medium text-brown-dark py-20 min-h-screen flex items-center">
+         
+        <div class="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-50" style="background-image: url('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Firefly%20tipo%20banner%20para%20un%20sitio%20web%20de%20la%20ciudad%20vieja%20de%20montevideo%20con%20movimiento%2067587.jpg-hiuOCHySL50HydkBsvGzoMNJYZTCN1.jpeg'); filter: contrast(1.1) brightness(1.1) saturate(1.2);"></div>
+        <div class="absolute inset-0 bg-gradient-to-br from-sand-light/60 to-sand-medium/60"></div>
+        
+        <div class="container mx-auto px-4 text-center relative z-10">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-5xl font-bold mb-6 text-balance text-brown-dark">Descubre Montevideo al Ritmo de un Pedal</h2>
+                <p class="text-xl mb-8 text-pretty leading-relaxed text-brown-medium">Experimenta la historia de Ciudad Vieja de forma ecológica, personalizada y auténtica con nuestros tours guiados en bicitaxi</p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="#contacto" class="bg-brown-medium hover:bg-brown-dark text-white px-8 py-4 rounded-lg text-lg font-semibold transition-colors inline-block">
+                        <i class="fas fa-calendar-alt mr-2"></i>Reservar Tour
+                    </a>
+                      
+                    <a href="https://drive.google.com/file/d/1pYXd_Yrmyro22bzwB9H-jkdVrM9jQXJS/view?usp=drive_link" target="_blank" class="border-2 border-brown-medium text-brown-medium hover:bg-brown-medium hover:text-white px-8 py-4 rounded-lg text-lg font-semibold transition-colors">
+                        <i class="fas fa-play mr-2"></i>Ver Video
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section id="beneficios" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h3 class="text-4xl font-bold text-gray-800 mb-4">¿Por Qué Elegir Bike City?</h3>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto text-pretty">Una experiencia turística que combina historia, cultura y sostenibilidad en el corazón de Montevideo</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8 mb-16">
+                <div class="bg-white p-8 rounded-xl shadow-lg text-center hover:shadow-xl transition-shadow">
+                    <div class="bg-bike-green text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-leaf text-2xl"></i>
+                    </div>
+                    <h4 class="text-xl font-bold mb-3 text-gray-800">100% Ecológico</h4>
+                    <p class="text-gray-600">Cero emisiones contaminantes. Contribuye a la reducción del CO₂ y promueve la movilidad sostenible en la ciudad.</p>
+                </div>
+                
+                <div class="bg-white p-8 rounded-xl shadow-lg text-center hover:shadow-xl transition-shadow">
+                    <div class="bg-brown-medium text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-user-friends text-2xl"></i>
+                    </div>
+                    <h4 class="text-xl font-bold mb-3 text-gray-800">Experiencia Personalizada</h4>
+                    <p class="text-gray-600">Tours íntimos y adaptables con guías locales expertos que narran la historia con pasión y conocimiento.</p>
+                </div>
+                
+                <div class="bg-white p-8 rounded-xl shadow-lg text-center hover:shadow-xl transition-shadow">
+                    <div class="bg-heritage-gold text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-landmark text-2xl"></i>
+                    </div>
+                    <h4 class="text-xl font-bold mb-3 text-gray-800">Patrimonio Cultural</h4>
+                    <p class="text-gray-600">Descubre la arquitectura colonial, plazas históricas y secretos de Ciudad Vieja desde 1724.</p>
+                </div>
+            </div>
+
+            <div class="bg-brown-medium text-white rounded-2xl p-8">
+                <div class="grid md:grid-cols-4 gap-8 text-center">
+                    <div>
+                        <div class="text-4xl font-bold mb-2">73.7%</div>
+                        <p class="text-sand-light">de turistas dispuestos a pagar por la experiencia</p>
+                    </div>
+                    <div>
+                        <div class="text-4xl font-bold mb-2">0</div>
+                        <p class="text-sand-light">emisiones de CO₂ durante el recorrido</p>
+                    </div>
+                    <div>
+                        <div class="text-4xl font-bold mb-2">300+</div>
+                        <p class="text-sand-light">años de historia por descubrir</p>
+                    </div>
+                    <div>
+                        <div class="text-4xl font-bold mb-2">8</div>
+                        <p class="text-sand-light">puntos históricos emblemáticos</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+ 
+    <section id="servicios" class="py-16">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h3 class="text-4xl font-bold text-gray-800 mb-4">Nuestros Servicios</h3>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">Ofrecemos diferentes opciones para que vivas Montevideo a tu manera</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white border-2 border-gray-200 rounded-xl p-6 hover:border-brown-medium transition-colors">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-route text-brown-medium text-2xl mr-3"></i>
+                        <h4 class="text-xl font-bold">Tour Clásico</h4>
+                    </div>
+                    <p class="text-gray-600 mb-4">Recorrido completo por Ciudad Vieja con paradas en todos los puntos históricos principales.</p>
+                    <div class="text-2xl font-bold text-brown-medium mb-2">USD $15</div>
+                    <p class="text-sm text-gray-500">Duración: 1-1.5 horas</p>
+                </div>
+                
+                <div class="bg-white border-2 border-gray-200 rounded-xl p-6 hover:border-brown-medium transition-colors">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-graduation-cap text-heritage-gold text-2xl mr-3"></i>
+                        <h4 class="text-xl font-bold">Tour Estudiante</h4>
+                    </div>
+                    <p class="text-gray-600 mb-4">Tarifa especial para estudiantes, jubilados y residentes locales con acreditación.</p>
+                    <div class="text-2xl font-bold text-heritage-gold mb-2">USD $10</div>
+                    <p class="text-sm text-gray-500">Con descuento especial</p>
+                </div>
+                
+                <div class="bg-white border-2 border-gray-200 rounded-xl p-6 hover:border-brown-medium transition-colors">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-users text-brown-dark text-2xl mr-3"></i>
+                        <h4 class="text-xl font-bold">Tour Grupal</h4>
+                    </div>
+                    <p class="text-gray-600 mb-4">Experiencias personalizadas para grupos y familias. Contáctanos a nuestro mail para mayor información: bicitaxi2025@gmail.com</p>
+                    <div class="text-2xl font-bold text-brown-dark mb-2">Consultar</div>
+                    <p class="text-sm text-gray-500">Descuentos especiales</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+    <section id="recorrido" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h3 class="text-4xl font-bold text-gray-800 mb-4">Nuestro Recorrido Histórico</h3>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto text-pretty">Un viaje a través de 300 años de historia montevideana</p>
+            </div>
+            
+            <div class="mb-12">
+                <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Firefly%20hazme%20un%20collage%20de%20fotos%20de%20ciudad%20vieja%20montevideo%2067587.jpg-vWt2xgGCGb8L5ZiUfOVgS6uCxqgkIH.jpeg" alt="Collage de Ciudad Vieja Montevideo" class="w-full max-w-4xl mx-auto rounded-xl shadow-lg">
+            </div>
+            
+            <div class="max-w-4xl mx-auto">
+                <div class="space-y-8">
+                    <div class="flex items-start space-x-4">
+                        <div class="bg-brown-medium text-white w-8 h-8 rounded-full flex items-center justify-center font-bold flex-shrink-0">1</div>
+                        <div>
+                            <h4 class="text-xl font-bold mb-2">Plaza Independencia - Puerta de la Ciudadela</h4>
+                            <p class="text-gray-600">Punto de partida en el corazón de Montevideo, donde comienza nuestra aventura histórica.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start space-x-4">
+                        <div class="bg-brown-medium text-white w-8 h-8 rounded-full flex items-center justify-center font-bold flex-shrink-0">2</div>
+                        <div>
+                            <h4 class="text-xl font-bold mb-2">Peatonal Sarandí</h4>
+                            <p class="text-gray-600">Galerías de arte, tiendas de antigüedades, librerías y cafés con estatuas urbanas sorprendentes.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start space-x-4">
+                        <div class="bg-brown-medium text-white w-8 h-8 rounded-full flex items-center justify-center font-bold flex-shrink-0">3</div>
+                        <div>
+                            <h4 class="text-xl font-bold mb-2">Catedral Metropolitana</h4>
+                            <p class="text-gray-600">Joya arquitectónica del siglo XVIII, cargada de historia y espiritualidad.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start space-x-4">
+                        <div class="bg-brown-medium text-white w-8 h-8 rounded-full flex items-center justify-center font-bold flex-shrink-0">4</div>
+                        <div>
+                            <h4 class="text-xl font-bold mb-2">Plaza Matriz y Cabildo</h4>
+                            <p class="text-gray-600">Lugar de encuentro histórico rodeado de edificios coloniales emblemáticos.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start space-x-4">
+                        <div class="bg-brown-medium text-white w-8 h-8 rounded-full flex items-center justify-center font-bold flex-shrink-0">5</div>
+                        <div>
+                            <h4 class="text-xl font-bold mb-2">Mercado del Puerto</h4>
+                            <p class="text-gray-600">Fusión de tradición gastronómica uruguaya con el colorido de un mercado vibrante.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start space-x-4">
+                        <div class="bg-brown-medium text-white w-8 h-8 rounded-full flex items-center justify-center font-bold flex-shrink-0">6</div>
+                        <div>
+                            <h4 class="text-xl font-bold mb-2">Museo Torres García</h4>
+                            <p class="text-gray-600">Descubre la obra del célebre artista que marcó el arte moderno latinoamericano.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+ 
+    <section class="py-16 bg-brown-dark text-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto text-center">
+                <h3 class="text-4xl font-bold mb-6">Comprometidos con el Futuro</h3>
+                <p class="text-xl mb-8 text-pretty leading-relaxed">Bike City se alinea con los Objetivos de Desarrollo Sostenible de la ONU y las directrices de la Organización Mundial del Turismo</p>
+                
+                <div class="grid md:grid-cols-3 gap-8 mt-12">
+                    <div class="text-center">
+                        <div class="bg-white text-brown-dark w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-globe text-2xl"></i>
+                        </div>
+                        <h4 class="text-xl font-bold mb-2">ODS 13</h4>
+                        <p class="text-sand-light">Acción por el Clima</p>
+                    </div>
+                    
+                    <div class="text-center">
+                        <div class="bg-white text-brown-dark w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-briefcase text-2xl"></i>
+                        </div>
+                        <h4 class="text-xl font-bold mb-2">ODS 8</h4>
+                        <p class="text-sand-light">Trabajo Decente</p>
+                    </div>
+                    
+                    <div class="text-center">
+                        <div class="bg-white text-brown-dark w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-city text-2xl"></i>
+                        </div>
+                        <h4 class="text-xl font-bold mb-2">ODS 11</h4>
+                        <p class="text-sand-light">Ciudades Sostenibles</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+      
+    <section class="py-16">
+        <div class="container mx-auto px-4">
+            <div class="max-w-3xl mx-auto text-center">
+                <h3 class="text-4xl font-bold text-gray-800 mb-8">Horarios y Disponibilidad</h3>
+                
+                <div class="bg-gray-50 rounded-2xl p-8 mb-8">
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div>
+                            <h4 class="text-xl font-bold mb-4 text-brown-medium">
+                                <i class="fas fa-calendar-alt mr-2"></i>Días de Operación
+                            </h4>
+                            <p class="text-gray-600">Lunes a Domingo</p>
+                        </div>
+                        
+                        <div>
+                            <h4 class="text-xl font-bold mb-4 text-brown-medium">
+                                <i class="fas fa-clock mr-2"></i>Horarios
+                            </h4>
+                            <p class="text-gray-600">10:00 - 18:00 horas</p>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-8 pt-8 border-t border-gray-200">
+                        <p class="text-gray-600">
+                            <i class="fas fa-info-circle text-brown-medium mr-2"></i>
+                            Tours cada 45 minutos | Capacidad: 2 pasajeros por bicitaxi
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     
+    <section id="contacto" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h3 class="text-4xl font-bold text-gray-800 mb-4">Contáctanos</h3>
+                <p class="text-xl text-gray-600">¿Listo para vivir la experiencia Bike City?</p>
+            </div>
+            
+            <div class="max-w-4xl mx-auto">
+                <div class="grid md:grid-cols-2 gap-12">
+                    <div>
+                        <h4 class="text-2xl font-bold mb-6 text-gray-800">Información de Contacto</h4>
+                        
+                        <div class="space-y-4">
+                            <div class="flex items-center space-x-3">
+                                <div class="bg-brown-medium text-white w-10 h-10 rounded-full flex items-center justify-center">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div>
+                                    <p class="font-semibold">Teléfono</p>
+                                    <p class="text-gray-600">+598 96 706 082</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-center space-x-3">
+                                <div class="bg-brown-medium text-white w-10 h-10 rounded-full flex items-center justify-center">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div>
+                                    <p class="font-semibold">Email</p>
+                                    <p class="text-gray-600">bicitaxi2025@gmail.com</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-center space-x-3">
+                                <div class="bg-brown-medium text-white w-10 h-10 rounded-full flex items-center justify-center">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div>
+                                    <p class="font-semibold">Punto de Encuentro</p>
+                                    <p class="text-gray-600">Plaza Independencia, Montevideo</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-8">
+                            <h5 class="text-lg font-bold mb-4">Síguenos en Redes Sociales</h5>
+                            <div class="flex space-x-4">
+                                <a href="https://instagram.com/bike.city.2025" target="_blank" class="bg-brown-medium text-white w-10 h-10 rounded-full flex items-center justify-center hover:bg-brown-dark transition-colors">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <h4 class="text-2xl font-bold mb-6 text-gray-800">Reserva tu Tour</h4>
+                        
+                        <form id="reservationForm" class="space-y-4">
+                            <div>
+                                <label class="block text-sm font-semibold mb-2">Nombre Completo</label>
+                                <input type="text" id="nombre" name="nombre" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brown-medium focus:border-transparent">
+                            </div>
+                            
+                            <div>
+                                <label class="block text-sm font-semibold mb-2">Email</label>
+                                <input type="email" id="email" name="email" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brown-medium focus:border-transparent">
+                            </div>
+                            
+                            <div>
+                                <label class="block text-sm font-semibold mb-2">Teléfono</label>
+                                <input type="tel" id="telefono" name="telefono" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brown-medium focus:border-transparent">
+                            </div>
+                            
+                            <div>
+                                <label class="block text-sm font-semibold mb-2">Fecha Preferida</label>
+                                <input type="date" id="fecha" name="fecha" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brown-medium focus:border-transparent">
+                            </div>
+                            
+                            <div>
+                                <label class="block text-sm font-semibold mb-2">Número de Personas</label>
+                                <select id="personas" name="personas" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brown-medium focus:border-transparent">
+                                    <option>1 persona</option>
+                                    <option>2 personas</option>
+                                    <option>3-5 personas</option>
+                                    <option>Más de 5 personas</option>
+                                </select>
+                            </div>
+                            
+                            <button type="submit" class="w-full bg-brown-medium text-white py-3 rounded-lg font-semibold hover:bg-brown-dark transition-colors">
+                                <i class="fas fa-paper-plane mr-2"></i>Enviar Reserva
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+    <div id="aboutModal" class="fixed inset-0 bg-black bg-opacity-50 hidden z-50">
+        <div class="flex items-center justify-center min-h-screen p-4">
+            <div class="bg-white rounded-lg max-w-2xl w-full p-8">
+                <div class="flex justify-between items-center mb-6">
+                    <h3 class="text-2xl font-bold text-gray-800">Quiénes Somos</h3>
+                    <button onclick="closeAboutModal()" class="text-gray-500 hover:text-gray-700">
+                        <i class="fas fa-times text-xl"></i>
+                    </button>
+                </div>
+                
+                <div class="text-gray-600 leading-relaxed">
+                    <p class="mb-4">Somos <strong>Bike City</strong>, un proyecto desarrollado por estudiantes de la <strong>Escuela Técnica Arroyo Seco</strong>, de la especialidad Bachillerato Técnico en Turismo.</p>
+                    <p class="mb-4">Apostamos por impulsar un turismo ecológico y sostenible, ofreciendo experiencias que combinan el disfrute de la naturaleza con el compromiso de cuidar nuestro entorno.</p>
+                    <div class="bg-bike-green bg-opacity-10 p-4 rounded-lg mt-6">
+                        <p class="text-bike-green font-semibold">Nuestro compromiso es brindar una experiencia auténtica y responsable, promoviendo el patrimonio cultural de Montevideo mientras cuidamos el medio ambiente.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="samuModal" class="fixed inset-0 bg-black bg-opacity-50 hidden z-50">
+        <div class="flex items-center justify-center min-h-screen p-4">
+            <div class="bg-white rounded-lg max-w-3xl w-full p-8">
+                <div class="flex justify-between items-center mb-6">
+                    <h3 class="text-2xl font-bold text-gray-800">Información SAMU</h3>
+                    <button onclick="closeSamuModal()" class="text-gray-500 hover:text-gray-700">
+                        <i class="fas fa-times text-xl"></i>
+                    </button>
+                </div>
+                
+                <div class="space-y-6">
+                    <div class="bg-red-50 border-l-4 border-red-500 p-4">
+                        <h4 class="text-lg font-bold text-red-700 mb-2">🚑 Emergencia (SAMU en Uruguay)</h4>
+                        <p class="text-gray-700 mb-3">Situación de riesgo vital inmediato que requiere asistencia médica inmediata en el lugar y traslado rápido.</p>
+                        <div class="mb-3">
+                            <p class="font-semibold text-gray-800">🔹 Ejemplos:</p>
+                            <ul class="list-disc list-inside text-gray-600 ml-4">
+                                <li>Paro cardiorrespiratorio</li>
+                                <li>Infarto agudo de miocardio</li>
+                                <li>Accidente de tránsito con politraumatismos graves</li>
+                                <li>Hemorragias masivas</li>
+                                <li>Dificultad respiratoria severa</li>
+                            </ul>
+                        </div>
+                        <p class="text-gray-700">👉 El SAMU actúa enviando una ambulancia especializada con médico, enfermero y equipo completo de reanimación.</p>
+                    </div>
+
+                    <div class="bg-yellow-50 border-l-4 border-yellow-500 p-4">
+                        <h4 class="text-lg font-bold text-yellow-700 mb-2">🩺 Urgencia (SAMU en Uruguay)</h4>
+                        <p class="text-gray-700 mb-3">Problema de salud que necesita atención médica rápida, pero que no compromete de forma inmediata la vida del paciente.</p>
+                        <div class="mb-3">
+                            <p class="font-semibold text-gray-800">🔹 Ejemplos:</p>
+                            <ul class="list-disc list-inside text-gray-600 ml-4">
+                                <li>Dolor abdominal intenso</li>
+                                <li>Fiebre muy alta en un niño o anciano</li>
+                                <li>Fractura sin compromiso vital</li>
+                                <li>Crisis asmática controlada</li>
+                                <li>Descompensación de enfermedad crónica sin riesgo vital inmediato</li>
+                            </ul>
+                        </div>
+                        <p class="text-gray-700">👉 El SAMU puede enviar un móvil, pero con menor prioridad que en las emergencias vitales.</p>
+                    </div>
+
+                    <div class="bg-blue-50 border-l-4 border-blue-500 p-4">
+                        <h4 class="text-lg font-bold text-blue-700 mb-2">📞 Números de Emergencia</h4>
+                        <div class="grid md:grid-cols-2 gap-4">
+                            <div>
+                                <p class="font-semibold">SAMU: <span class="text-red-600">108</span></p>
+                                <p class="font-semibold">Emergencias: <span class="text-red-600">911</span></p>
+                            </div>
+                            <div>
+                                <p class="font-semibold">Bomberos: <span class="text-red-600">104</span></p>
+                                <p class="font-semibold">Policía: <span class="text-red-600">109</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="termsModal" class="fixed inset-0 bg-black bg-opacity-50 hidden z-50">
+        <div class="flex items-center justify-center min-h-screen p-4">
+            <div class="bg-white rounded-lg max-w-4xl w-full p-8 max-h-screen overflow-y-auto">
+                <div class="flex justify-between items-center mb-6">
+                    <h3 class="text-2xl font-bold text-gray-800">Términos y Condiciones</h3>
+                    <button onclick="closeTermsModal()" class="text-gray-500 hover:text-gray-700">
+                        <i class="fas fa-times text-xl"></i>
+                    </button>
+                </div>
+                
+                <div class="text-gray-600 leading-relaxed space-y-4">
+                    <div class="text-center mb-6">
+                        <h4 class="text-xl font-bold text-gray-800">📜 Términos y Condiciones – Bike City</h4>
+                    </div>
+                    
+                    <p>Bienvenido a Bike City, un proyecto creado por estudiantes de la Escuela Técnica Arroyo Seco (Bachillerato Técnico en Turismo). Al participar en nuestras actividades, visitas guiadas o recorridos en bicicleta por la Ciudad Vieja, aceptás las siguientes condiciones:</p>
+
+                    <div class="space-y-4">
+                        <div>
+                            <h5 class="font-bold text-gray-800">1. Objeto del proyecto</h5>
+                            <p>Bike City ofrece recorridos turísticos en bicicleta con enfoque en el turismo ecológico y sostenible, buscando fomentar el disfrute de la ciudad y el respeto por el medio ambiente.</p>
+                        </div>
+
+                        <div>
+                            <h5 class="font-bold text-gray-800">2. Uso de las bicicletas</h5>
+                            <ul class="list-disc list-inside ml-4">
+                                <li>El participante es responsable del correcto uso de la bicicleta durante el recorrido.</li>
+                                <li>Se recomienda respetar siempre las normas de tránsito y las indicaciones de los guías.</li>
+                                <li>El uso de casco es obligatorio.</li>
+                            </ul>
+                        </div>
+
+                        <div>
+                            <h5 class="font-bold text-gray-800">3. Seguridad</h5>
+                            <ul class="list-disc list-inside ml-4">
+                                <li>Los recorridos están diseñados para ser seguros, pero cada participante es responsable de su propia conducta durante la actividad.</li>
+                                <li>Bike City no se hace responsable por accidentes ocasionados por imprudencia o incumplimiento de las normas de seguridad.</li>
+                            </ul>
+                        </div>
+
+                        <div>
+                            <h5 class="font-bold text-gray-800">4. Salud del participante</h5>
+                            <ul class="list-disc list-inside ml-4">
+                                <li>Al unirse a la actividad, el participante declara encontrarse en condiciones físicas adecuadas para realizar el recorrido.</li>
+                                <li>Si presenta algún problema de salud que limite su participación, debe informarlo previamente.</li>
+                            </ul>
+                        </div>
+
+                        <div>
+                            <h5 class="font-bold text-gray-800">5. Responsabilidad</h5>
+                            <ul class="list-disc list-inside ml-4">
+                                <li>Bike City no se responsabiliza por la pérdida o daño de objetos personales durante la actividad.</li>
+                                <li>Los menores de 18 años deben estar acompañados por un adulto responsable.</li>
+                            </ul>
+                        </div>
+
+                        <div>
+                            <h5 class="font-bold text-gray-800">6. Derechos de imagen</h5>
+                            <p>Durante las actividades, pueden tomarse fotos o videos con fines educativos o de difusión del proyecto. El participante acepta su uso salvo que indique lo contrario antes de iniciar el recorrido.</p>
+                        </div>
+
+                        <div>
+                            <h5 class="font-bold text-gray-800">7. Contacto</h5>
+                            <p>Para consultas o sugerencias, podés comunicarte con el equipo de Bike City – Escuela Técnica Arroyo Seco.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+     
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center space-x-3 mb-4">
+                        <i class="fas fa-bicycle text-2xl text-bike-green"></i>
+                        <h4 class="text-xl font-bold">Bike City</h4>
+                    </div>
+                    <p class="text-gray-400 text-pretty">Turismo sostenible y auténtico en el corazón histórico de Montevideo.</p>
+                </div>
+                
+                <div>
+                    <h5 class="text-lg font-bold mb-4">Servicios</h5>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#servicios" class="hover:text-bike-green transition-colors">Tour Clásico</a></li>
+                        <li><a href="#servicios" class="hover:text-bike-green transition-colors">Tour Estudiante</a></li>
+                        <li><a href="#servicios" class="hover:text-bike-green transition-colors">Tour Grupal</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h5 class="text-lg font-bold mb-4">Información</h5>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" onclick="openAboutModal()" class="hover:text-bike-green transition-colors">Sobre Nosotros</a></li>
+                        <li><a href="#" onclick="openTermsModal()" class="hover:text-bike-green transition-colors">Términos y Condiciones</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h5 class="text-lg font-bold mb-4">Emergencias</h5>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><i class="fas fa-phone mr-2"></i>911 - Emergencias</li>
+                        <li><a href="#" onclick="openSamuModal()" class="hover:text-bike-green transition-colors"><i class="fas fa-ambulance mr-2"></i>108 - SAMU</a></li>
+                        <li><i class="fas fa-fire mr-2"></i>104 - Bomberos</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+                <p class="text-gray-400">© 2025 Bike City. Todos los derechos reservados. | Proyecto de Turismo Sostenible - Montevideo, Uruguay</p>
+            </div>
+        </div>
+    </footer>
+
+   
+    <button id="scrollTop" class="fixed bottom-6 right-6 bg-bike-green text-white w-12 h-12 rounded-full shadow-lg hover:bg-green-600 transition-colors opacity-0 pointer-events-none">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Scroll to top button functionality
+        const scrollTopBtn = document.getElementById('scrollTop');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                scrollTopBtn.classList.remove('opacity-0', 'pointer-events-none');
+                scrollTopBtn.classList.add('opacity-100');
+            } else {
+                scrollTopBtn.classList.add('opacity-0', 'pointer-events-none');
+                scrollTopBtn.classList.remove('opacity-100');
+            }
+        });
+
+        scrollTopBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Mobile menu toggle (basic implementation)
+        const mobileMenuBtn = document.querySelector('.md\\:hidden button');
+        const nav = document.querySelector('nav');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            nav.classList.toggle('hidden');
+        });
+
+        document.getElementById('reservationForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form data
+            const formData = new FormData(this);
+            const nombre = formData.get('nombre');
+            const email = formData.get('email');
+            const telefono = formData.get('telefono');
+            const fecha = formData.get('fecha');
+            const personas = formData.get('personas');
+            
+            // Create email body
+            const emailBody = `Nueva Reserva de Tour - Bike City
+            
+Nombre: ${nombre}
+Email: ${email}
+Teléfono: ${telefono}
+Fecha Preferida: ${fecha}
+Número de Personas: ${personas}
+
+Por favor, confirme la disponibilidad para esta reserva.
+
+Saludos,
+Sistema de Reservas Bike City`;
+            
+            // Create mailto link
+            const mailtoLink = `mailto:bicitaxi2025@gmail.com?subject=Nueva Reserva de Tour - ${nombre}&body=${encodeURIComponent(emailBody)}`;
+            
+            // Open email client
+            window.location.href = mailtoLink;
+            
+            // Show confirmation message but don't clear form
+            alert('Se ha abierto tu cliente de correo para enviar la reserva. Por favor, envía el email para completar tu reserva.');
+        });
+
+        // Modal functions
+        function openAboutModal() {
+            document.getElementById('aboutModal').classList.remove('hidden');
+        }
+
+        function closeAboutModal() {
+            document.getElementById('aboutModal').classList.add('hidden');
+        }
+
+        function openSamuModal() {
+            document.getElementById('samuModal').classList.remove('hidden');
+        }
+
+        function closeSamuModal() {
+            document.getElementById('samuModal').classList.add('hidden');
+        }
+
+        function openTermsModal() {
+            document.getElementById('termsModal').classList.remove('hidden');
+        }
+
+        function closeTermsModal() {
+            document.getElementById('termsModal').classList.add('hidden');
+        }
+
+        // Close modals when clicking outside
+        window.addEventListener('click', function(e) {
+            if (e.target.classList.contains('fixed') && e.target.classList.contains('inset-0')) {
+                closeAboutModal();
+                closeSamuModal();
+                closeTermsModal();
+            }
+        });
+    </script>
+</body>
+</html>
